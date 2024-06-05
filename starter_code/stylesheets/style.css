@@ -209,3 +209,27 @@ header h1 {
   margin-bottom: 2rem;
 }
 
+.stats-list li p:first-child {
+  height: 4.5rem;
+}
+
+.stats-list li p:last-child {
+  font-size: 1.5rem;
+  color: #191817;
+  font-weight: bold;
+  padding: 0 13.5rem;
+}
+
+.stats-list li p:first-child > span {
+  color: #540B51;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.stats-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+}
+
