@@ -271,5 +271,34 @@ header h1 {
   border-color: white;
 }
 
+footer {
+  margin: 2.7rem 2rem;
+  display: flex;
+  flex-direction: column;
 
+  gap: 2rem;
+}
 
+footer ul {
+  list-style: none;
+}
+
+footer hr {
+  order: -1;
+}
+
+footer ul:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+footer ul:last-of-type {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fab {
+  font-size: 2rem;
+}
