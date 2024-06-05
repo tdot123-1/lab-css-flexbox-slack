@@ -158,3 +158,29 @@ header h1 {
 .buttons-header button > div {
   width: 3rem;
 }
+
+.brands {
+  background-color: #F3EAE2;
+}
+
+.brands p {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.brands > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+.brands > div > img {
+  width: 20%;
+  flex-grow: 1;
+}
+
