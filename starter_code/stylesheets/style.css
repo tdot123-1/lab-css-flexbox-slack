@@ -18,7 +18,7 @@ footer links grey: #454245
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: sans-serif;
 }
 body {
   line-height: 1.5;
@@ -147,6 +147,9 @@ header h1 {
 .buttons-header button:last-child {
   background-color: #4285F4;
   color: white;
+}
+
+.buttons-header button:last-child span {
   font-size: 1.5rem;
 }
 
@@ -182,5 +185,27 @@ header h1 {
 .brands > div > img {
   width: 20%;
   flex-grow: 1;
+}
+
+.stats {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats > h3 {
+  font-size: 3rem;
+  line-height: 4rem;
+  padding: 1rem 4rem;
+  margin-top: 4rem;
+  color: #540B51;
+}
+
+.stats > p {
+  color: #191817;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0 5rem;
+  margin-bottom: 2rem;
 }
 
