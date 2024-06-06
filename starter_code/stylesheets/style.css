@@ -42,6 +42,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 nav {
   display: flex;
+  justify-content: space-between;
   background-color: #540B51;
 }
 
@@ -318,6 +319,12 @@ footer ul:last-of-type {
     right: -45%;
   }
 
+  .header-text h1, .header-text p {
+    text-align: start;
+    padding-left: 2rem;
+    padding-right: 3rem;
+  }
+
   .buttons-header button, .buttons-header button:last-child span {
     font-size: 1.3rem;
   }
@@ -385,4 +392,8 @@ footer ul:last-of-type {
     justify-content: flex-start;
     gap: 5rem;
   }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
 }
