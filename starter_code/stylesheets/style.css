@@ -38,9 +38,7 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-img {
-  max-width: 100vw;
-}
+
 
 nav {
   display: flex;
@@ -217,7 +215,7 @@ header h1 {
   font-size: 1.5rem;
   color: #191817;
   font-weight: bold;
-  padding: 0 13.5rem;
+  padding: 0 30%;
 
 }
 
@@ -290,7 +288,7 @@ footer hr {
 footer ul:first-child {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   font-weight: bold;
 }
 
@@ -301,4 +299,90 @@ footer ul:last-of-type {
 
 .fab {
   font-size: 2rem;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  header > div:last-child {
+    overflow: hidden;
+
+  }
+
+  header > div:last-child > img {
+    position: relative;
+    right: -45%;
+  }
+
+  .buttons-header button, .buttons-header button:last-child span {
+    font-size: 1.3rem;
+  }
+
+  .brands {
+    padding-bottom: 1.5rem;
+  }
+
+  .brands > div > img {
+    width: 7%;
+  }
+
+  .brands > div > img:first-child {
+    flex-grow: 5;
+  }
+
+  .brands > div > img:nth-child(5) {
+    flex-grow: 10;
+  }
+
+  .brands > div > img:last-child {
+    flex-grow: 7;
+  }
+
+  .stats > h3 {
+    font-size: 2.5rem;
+  }
+
+  .stats > p {
+    font-size: 1.2rem;
+  }
+
+  .stats-list {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+    margin-top: 2rem;
+  }
+
+  .stats-list li {
+    line-height: 1.5rem;
+    max-width: 20%;
+  }
+  
+  .stats-list li p:last-child {
+    font-size: 1.2rem;
+    padding: 0 0;
+  
+  }
+  
+  .stats-list li p:first-child > span {
+    font-size: 3rem;
+  }
+
+  .stats-list li p:first-child {
+    height: auto;
+  }
+
+  footer ul:first-child {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer ul:last-of-type {
+    justify-content: flex-start;
+    gap: 5rem;
+  }
 }
