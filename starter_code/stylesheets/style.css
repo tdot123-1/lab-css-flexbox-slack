@@ -161,6 +161,7 @@ header h1 {
 .buttons-header button img {
   max-width: 3rem;
   background-color: white;
+  border-radius: 8px;
 } 
 
 .buttons-header button > div {
@@ -459,6 +460,10 @@ footer ul:last-of-type {
   .digitalHQ {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .digitalHQ h3 {
+    flex: 1 1 100%;
   }
 
   .digitalHQ button {
