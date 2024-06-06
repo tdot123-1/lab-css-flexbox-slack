@@ -50,6 +50,11 @@ header {
   background-color: #540B51;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .nav-items {
   visibility: hidden;
   display: flex;
@@ -64,6 +69,7 @@ header {
 .navbar {
   display: flex;
   padding: 2rem;
+  align-items: center;
 }
 
 .navbar img {
@@ -303,10 +309,12 @@ footer ul:last-of-type {
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   header {
     display: flex;
     align-items: center;
+    background-image: url("/starter_code/images/background-singup.png");
+    background-size: cover;
   }
 
   header > div:last-child {
@@ -394,6 +402,68 @@ footer ul:last-of-type {
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1025px) {
+  
+  nav {
+    padding: 1rem 2rem;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    padding: 0 0;
+  }
+
+  .navbar img {
+    width: 20%;
+  }
+
+  a {
+    font-size: 1.1rem;
+  }
+  
+  .nav-items {
+    visibility: visible;
+  }
+
+  .buttons-nav {
+    width: 30rem;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2.5rem;
+  }
+
+  .buttons-nav button:last-of-type {
+    display: none;
+  }
+
+  .buttons-nav ul {
+    display: flex !important;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .buttons-nav ul li:last-child {
+    background-color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 8px;
+  }
+
+  .buttons-nav ul li:last-child a {
+    color: #540B51;
+    text-transform: uppercase;
+  }
+
+  .digitalHQ {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .digitalHQ button {
+    width: 25%;
+  }
+
 
 }
