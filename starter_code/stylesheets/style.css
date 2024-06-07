@@ -57,7 +57,7 @@ a {
 
 .nav-items {
   visibility: hidden;
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   width: 80%;
 }
@@ -77,8 +77,8 @@ a {
 }
 
 .buttons-nav {
-  padding: 1rem;
-  width: 10rem;
+  padding-right: 0.8rem;
+  width: 30%;
   display: flex;
   align-self: center;
   justify-content: center;
@@ -424,6 +424,7 @@ footer ul:last-of-type {
   
   .nav-items {
     visibility: visible;
+    display: flex;
   }
 
   .buttons-nav {
